@@ -5,3 +5,14 @@
 .nav-item:hover {
   cursor: pointer;
 }
+
+.nav-active,
+.site-main a {
+  border-bottom: 1px dotted navy;
+  color: navy;
+}
+
+.site-main a:hover,
+.site-main a:focus {
+  border-bottom: 1px solid navy;
+}
