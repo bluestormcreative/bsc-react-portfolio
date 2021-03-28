@@ -5,7 +5,7 @@ import CategoryFilter from '../CategoryFilter';
 import Project from '../Project';
 
 const Portfolio = () => {
-  const [selectedCat, setSelectedCat] = useState('Artists');
+  const [selectedCat, setSelectedCat] = useState('Media');
 
   const [projects] = useState([
     {
@@ -60,10 +60,12 @@ const Portfolio = () => {
         selectedCat={selectedCat}
         setSelectedCat={setSelectedCat}
       />
-      <h1 className="portfolio__heading text-2xl">{selectedCat}</h1>
-      {displayProjects && displayProjects.map((project) => (
-        <Project project={project} />
-      ))}
+      <h1 className="portfolio__heading text-3xl mb-4 border-b-2">{selectedCat}</h1>
+      <div className="portfolio__projects grid grid-cols-2 gap-8">
+        {displayProjects && displayProjects.map((project) => (
+          <Project project={project} />
+        ))}
+      </div>
     </section>
   );
 };

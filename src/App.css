@@ -17,6 +17,7 @@
   border-bottom: 1px solid #25629C;
 }
 
-.cat-active {
+.cat-active,
+.project__cat {
   background-color: lightsteelblue;
 }

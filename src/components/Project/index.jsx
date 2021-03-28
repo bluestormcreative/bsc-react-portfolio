@@ -24,11 +24,11 @@ const Project = ({ project }) => {
     <div className="project">
       <div className="project__cats text-xs">
         {cat && cat.map((cat) => (
-          <span className="project__cat">{cat}</span>
+          <span className="project__cat inline-block px-2 py-1 mr-2">{cat}</span>
         ))}
       </div>
-      <h2 className="project__name text-xl">{name}</h2>
-      <p className="project__desc">{desc}</p>
+      <h2 className="project__name text-xl py-4">{name}</h2>
+      <p className="project__desc pb-4">{desc}</p>
       <img className="project__image"src={allImages[`${image}`].default} alt={`${name} project screenshot`} />
       <Button 
         classNames="project__link"
