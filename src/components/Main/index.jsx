@@ -2,10 +2,16 @@ import React from 'react';
 
 // Components.
 import About from '../About';
+import Portfolio from '../Portfolio';
 
-const Main = () => (
+const Main = ({ selectedNavItem }) => (
   <div className="site-main">
-    <About />
+    {selectedNavItem === 'About' && (
+      <About />
+    )}
+    {selectedNavItem === 'Portfolio' && (
+      <Portfolio />
+    )}
   </div>
 );
 
