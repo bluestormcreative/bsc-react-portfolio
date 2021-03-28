@@ -1,11 +1,10 @@
 import React from 'react';
 
 const Nav = () => (
-	<nav className="site-nav">
+	<nav className="site-nav border-b-2 border-solid border-gray-400">
 		About
-		Categories 1
-		Categories 2
-		Categories 3
+		Portfolio
+		Resume
 		Contact
 	</nav>
 );
