@@ -10,19 +10,19 @@ const CategoryFilter = ({ selectedCat, setSelectedCat }) => {
   return (
     <section className="categories py-4 flex space-x-4">
       <span
-        className={`category ${selectedCat === 'Artists' ? 'cat-active' : ''}`}
+        className={`category inline-block px-1 ${selectedCat === 'Artists' ? 'cat-active' : ''}`}
         onClick={handleCatClick}
       >
         Artists
       </span>
       <span
-        className={`category ${selectedCat === 'Media' ? 'cat-active' : ''}`}
+        className={`category inline-block px-1 ${selectedCat === 'Media' ? 'cat-active' : ''}`}
         onClick={handleCatClick}
       >
         Media
       </span>
       <span
-        className={`category ${selectedCat === 'Nonprofits' ? 'cat-active' : ''}`}
+        className={`category inline-block px-1 ${selectedCat === 'Nonprofits' ? 'cat-active' : ''}`}
         onClick={handleCatClick}
       >
         Nonprofits

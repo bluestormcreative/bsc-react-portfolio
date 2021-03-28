@@ -16,3 +16,7 @@
 .site-main a:focus {
   border-bottom: 1px solid #25629C;
 }
+
+.cat-active {
+  background-color: lightsteelblue;
+}
