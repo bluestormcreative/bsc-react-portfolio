@@ -6,10 +6,10 @@ exports[`About component matches snapshot DOM node structure 1`] = `
     id="about"
   >
     <header
-      class="about-header grid grid-cols-12 grid-rows-1 gap-x-1 pb-4"
+      class="about-header grid grid-cols-12 grid-rows-1 gap-x-1 pb-4 items-center"
     >
       <div
-        class="header__text col-span-8"
+        class="header__text col-span-9"
       >
         <h1
           class="text-2xl"
@@ -23,9 +23,13 @@ exports[`About component matches snapshot DOM node structure 1`] = `
         </h2>
       </div>
       <div
-        class="header__image col-span-4"
+        class="header__image col-span-3"
       >
-        image here gross
+        <img
+          alt="Close up of a white, non-binary middle-aged person wearing glasses, a cap, and a gray hoodie. They smile slightly in front of a desert mountain."
+          class="rounded-full"
+          src="max-avatar-2020.jpeg"
+        />
       </div>
     </header>
     <p
@@ -43,7 +47,7 @@ exports[`About component matches snapshot DOM node structure 1`] = `
     <p
       class="mb-2"
     >
-      Blue Storm Creative remains where I provide freelance websites and marketing strategies for smaller business ventures, artists, authors, and non-profits. To date I’ve developed hundreds of sites ranging from personal blogs to enterprise-level marketing sites, stores, online courses, membership hubs, and everything in between.
+      Blue Storm Creative remains where I provide freelance websites and marketing strategies for smaller business ventures, artists, authors, and nonprofits. To date I’ve developed hundreds of sites ranging from personal blogs to enterprise-level marketing sites, stores, online courses, membership hubs, and everything in between.
     </p>
   </section>
 </DocumentFragment>
