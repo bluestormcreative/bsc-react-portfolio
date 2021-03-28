@@ -1,6 +1,4 @@
 // craco.config.js
-const BabelRcPlugin = require('@jackwilsdon/craco-use-babelrc');
-
 module.exports = {
   style: {
     postcss: {
@@ -10,7 +8,4 @@ module.exports = {
       ],
     },
   },
-  plugins: [
-    { plugin: BabelRcPlugin },
-  ],
 }
