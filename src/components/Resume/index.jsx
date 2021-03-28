@@ -7,7 +7,7 @@ import Button from '../Button';
 const Resume = () => (
   <section className="resume">
     <h2 className="resume__heading text-2xl mb-4">Experience</h2>
-    <p className="resume__description py-4">I've been crafting digital experiences online since 2006. I've worked with several top web agencies and am currently with <a href="https://alley.co" target="blank">Alley.</a></p>
+    <p className="resume__description py-4">I've been crafting digital experiences online since 2006. I've worked with several top web agencies and am currently a UX Developer with <a href="https://alley.co/team/" target="blank">Alley.</a></p>
     
     <div className="resume__buttons flex space-x-4">
       <Button
