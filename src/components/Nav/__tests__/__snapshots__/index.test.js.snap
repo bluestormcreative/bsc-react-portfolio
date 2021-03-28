@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <nav
+    class="site-nav border-b-2 border-solid border-gray-400 py-4 flex space-x-4"
+  >
+    <a
+      class="nav-item inline-block nav-active"
+      data-testid="about"
+      href="#about"
+    >
+      About
+    </a>
+    <span
+      class="nav-item inline-block "
+      data-testid="portfolio"
+    >
+      Portfolio
+    </span>
+    <span
+      class="nav-item inline-block "
+    >
+      Resume
+    </span>
+    <span
+      class="nav-item inline-block "
+    >
+      Contact
+    </span>
+  </nav>
+</DocumentFragment>
+`;
