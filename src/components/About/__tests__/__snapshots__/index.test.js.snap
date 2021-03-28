@@ -6,7 +6,7 @@ exports[`About component matches snapshot DOM node structure 1`] = `
     id="about"
   >
     <header
-      class="about-header grid grid-cols-12 grid-rows-1 gap-x-1"
+      class="about-header grid grid-cols-12 grid-rows-1 gap-x-1 pb-4"
     >
       <div
         class="header__text col-span-8"
@@ -28,7 +28,9 @@ exports[`About component matches snapshot DOM node structure 1`] = `
         image here gross
       </div>
     </header>
-    <p>
+    <p
+      class="mb-2"
+    >
       What was once a hobby is now my career, and I am currently a full-time UX Developer with 
       <a
         href="https://alley.co"
@@ -38,7 +40,9 @@ exports[`About component matches snapshot DOM node structure 1`] = `
       </a>
       , where we craft custom digital experiences for publishers, nonprofit institutions, museums, and brands. Some of the clients I've worked with include Google, Microsoft, Campbell’s, News Corp, NBC, Fox, and Viacom, along with countless other businesses, entrepreneurs, and creators.
     </p>
-    <p>
+    <p
+      class="mb-2"
+    >
       Blue Storm Creative remains where I provide freelance websites and marketing strategies for smaller business ventures, artists, authors, and non-profits. To date I’ve developed hundreds of sites ranging from personal blogs to enterprise-level marketing sites, stores, online courses, membership hubs, and everything in between.
     </p>
   </section>
