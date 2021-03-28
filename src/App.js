@@ -10,7 +10,7 @@ function App() {
   const [selectedNavItem, setSelectedNavItem] = useState('About');
 
   return (
-    <div className="App container mx-auto">
+    <div className="App container mx-auto flex flex-col min-h-screen">
       <Header
         selectedNavItem={selectedNavItem}
         setSelectedNavItem={setSelectedNavItem}
