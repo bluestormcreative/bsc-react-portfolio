@@ -7,7 +7,7 @@
 }
 
 .nav-active,
-.site-main a {
+.site-main a:not(.project__link) {
   border-bottom: 1px dotted #25629C;
   color: #25629C;
 }
