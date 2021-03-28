@@ -7,11 +7,11 @@ import Project from '../Project';
 const Portfolio = () => {
   const [selectedCat, setSelectedCat] = useState('Artists');
 
-  const projects = [
+  const [projects] = useState([
     { 'name': 'alpha', 'cat': ['Artists'] },
     { 'name': 'beta', 'cat': ['Artists', 'Media'] },
     { 'name': 'zed', 'cat': ['Nonprofits', 'Media'] },
-  ];
+  ]);
 
   const displayProjects = projects.filter((project) => project.cat.includes(selectedCat));
 
