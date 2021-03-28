@@ -13,13 +13,16 @@ const Portfolio = () => {
     { 'name': 'zed', 'cat': ['Nonprofits', 'Media'] },
   ];
 
+  const displayProjects = projects.filter((project) => project.cat.includes(selectedCat));
+
   return (
     <section className="portfolio">
       <CategoryFilter
         selectedCat={selectedCat}
         setSelectedCat={setSelectedCat}
       />
-      {projects && projects.map((project) => (
+      <h1 className="portfolio__heading text-2xl">{selectedCat}</h1>
+      {displayProjects && displayProjects.map((project) => (
         <Project project={project} />
       ))}
     </section>
