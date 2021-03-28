@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 // Components.
@@ -7,10 +7,15 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 
 function App() {
+  const [selectedNavItem, setSelectedNavItem] = useState('About');
+
   return (
     <div className="App container mx-auto">
-      <Header />
-      <Main />
+      <Header
+        selectedNavItem={selectedNavItem}
+        setSelectedNavItem={setSelectedNavItem}
+      />
+      <Main selectedNavItem={selectedNavItem} />
       <Footer />
     </div>
   );
