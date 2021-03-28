@@ -1,13 +1,13 @@
 import React from 'react';
 
 const Nav = () => (
-	<div className="nav">
+	<nav className="site-nav">
 		About
 		Categories 1
 		Categories 2
 		Categories 3
 		Contact
-	</div>
+	</nav>
 );
 
 export default Nav;
