@@ -32,7 +32,7 @@ const Project = ({ project }) => {
       <p className="project__desc pb-4">{desc}</p>
       <img className="project__image"src={allImages[`${image}`].default} alt={`${name} project screenshot`} />
       <Button 
-        classNames="project__link"
+        classNames="project__link button__link"
         isLink={true}
         newTab={true}
         text="View Live Project"
