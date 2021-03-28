@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // Components.
 import Button from '../Button';
 
 const ContactForm = () => {
-  const handleClick = () => {
+  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+
+  const handleClick = (event) => {
+    event.preventDefault();
     console.log('submit clicked');
   };
 
@@ -21,7 +24,7 @@ const ContactForm = () => {
               Name:
             </label>
           </div>
-          <div class="md:w-2/3">
+          <div className="md:w-2/3">
             <input className="w-full p-2" type="text" name="name" />
           </div>
         </div>
@@ -34,7 +37,7 @@ const ContactForm = () => {
                 Email:
             </label>
           </div>
-          <div class="md:w-2/3">
+          <div className="md:w-2/3">
             <input className="w-full p-2" type="email" name="email" />
           </div>
         </div>
@@ -47,13 +50,13 @@ const ContactForm = () => {
                 Message:
             </label>
           </div>
-          <div class="md:w-2/3">
+          <div className="md:w-2/3">
             <textarea className="w-full p-2" name="message" rows="5"  />
           </div>
         </div>
-        <div class="md:flex md:items-center">
-          <div class="md:w-1/3"></div>
-          <div class="md:w-2/3">
+        <div className="md:flex md:items-center">
+          <div className="md:w-1/3"></div>
+          <div className="md:w-2/3">
             <Button type="submit" onClick={handleClick} text="Submit" />
           </div>
         </div>
