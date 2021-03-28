@@ -8,11 +8,11 @@
 
 .nav-active,
 .site-main a {
-  border-bottom: 1px dotted navy;
-  color: navy;
+  border-bottom: 1px dotted #25629C;
+  color: #25629C;
 }
 
 .site-main a:hover,
 .site-main a:focus {
-  border-bottom: 1px solid navy;
+  border-bottom: 1px solid #25629C;
 }
