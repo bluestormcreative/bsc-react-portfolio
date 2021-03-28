@@ -4,6 +4,7 @@ import React from 'react';
 import About from '../About';
 import Portfolio from '../Portfolio';
 import Resume from '../Resume';
+import ContactForm from '../Contact';
 
 const Main = ({ selectedNavItem }) => (
   <div className="site-main flex-grow">
@@ -15,6 +16,9 @@ const Main = ({ selectedNavItem }) => (
     )}
     {selectedNavItem === 'Resume' && (
       <Resume />
+    )}
+    {selectedNavItem === 'Contact' && (
+      <ContactForm />
     )}
   </div>
 );
