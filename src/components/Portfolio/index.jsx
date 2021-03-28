@@ -48,7 +48,7 @@ const Portfolio = () => {
       'cat': ['Media'],
       'desc': 'Development team for curation and membership tools for News Corp/The New York Post.',
       'image': 'nyp-member-dash.png',
-      'link': 'https://www.nbcnewyork.com/',
+      'link': 'https://www.nypost.com/',
     },
   ]);
 
@@ -63,7 +63,7 @@ const Portfolio = () => {
       <h1 className="portfolio__heading text-3xl mb-4 border-b-2">{selectedCat}</h1>
       <div className="portfolio__projects grid grid-cols-2 gap-8">
         {displayProjects && displayProjects.map((project) => (
-          <Project project={project} />
+          <Project key={project.name} project={project} />
         ))}
       </div>
     </section>

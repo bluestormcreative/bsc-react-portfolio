@@ -14,6 +14,7 @@ const Project = ({ project }) => {
 
   const importAll = (r) => {
     let images = {};
+    // eslint-disable-next-line array-callback-return
     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
     return images;
   }
@@ -24,7 +25,7 @@ const Project = ({ project }) => {
     <div className="project">
       <div className="project__cats text-xs">
         {cat && cat.map((cat) => (
-          <span className="project__cat inline-block px-2 py-1 mr-2">{cat}</span>
+          <span key={cat} className="project__cat inline-block px-2 py-1 mr-2">{cat}</span>
         ))}
       </div>
       <h2 className="project__name text-xl py-4">{name}</h2>

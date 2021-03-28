@@ -18,6 +18,7 @@ const CategoryFilter = ({ selectedCat, setSelectedCat }) => {
       <span className="category-text inline-block p-1">Select a Category:</span>
       {cats.map((cat) => (
         <span
+          key={cat}
           className={`category inline-block p-1 ${selectedCat === cat ? 'cat-active' : ''}`}
           onClick={handleCatClick}
         >

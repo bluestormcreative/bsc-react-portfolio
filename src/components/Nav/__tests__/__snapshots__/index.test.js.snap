@@ -13,18 +13,18 @@ exports[`Nav component matches snapshot DOM node structure 1`] = `
       About
     </a>
     <span
-      class="nav-item inline-block false"
+      class="nav-item inline-block "
       data-testid="portfolio"
     >
       Portfolio
     </span>
     <span
-      class="nav-item inline-block false"
+      class="nav-item inline-block "
     >
       Resume
     </span>
     <span
-      class="nav-item inline-block false"
+      class="nav-item inline-block "
     >
       Contact
     </span>
