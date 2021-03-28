@@ -1,9 +1,24 @@
 import React from 'react';
 
-const Portfolio = () => (
-  <section className="portfolio">
-    portfolio
-  </section>
-);
+// Components.
+import CategoryFilter from '../CategoryFilter';
+import Project from '../Project';
+
+const Portfolio = () => {
+  const projects = [
+    { 'name': 'alpha' },
+    { 'name': 'beta' },
+    { 'name': 'zed' },
+  ];
+
+  return (
+    <section className="portfolio">
+      <CategoryFilter />
+      {projects && projects.map((project) => (
+        <Project name={project.name} />
+      ))}
+    </section>
+  );
+};
 
 export default Portfolio;
