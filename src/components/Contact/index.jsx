@@ -61,6 +61,7 @@ const ContactForm = () => {
   return (
     <section className="contact">
       <h1 className="contact__heading text-2xl mb-4">Contact Me</h1>
+      <p className="contact__description">Front-end form for demonstration only!</p>
       <form
         id="contact-form"
         className="w-full max-w-sm"
